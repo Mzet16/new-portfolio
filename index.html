@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Billy's Web Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <img src="billylogo.png" alt="nopicture" class="logo" />
+      <ul id="menu-links">
+        <li>Home</li>
+        <li>Purpose</li>
+        <li>Projects</li>
+        <li>About Me</li>
+      </ul>
+      <button class="nav-btn">Get started</button>
+
+      <img
+        src="manu.png"
+        alt="nopicture"
+        class="menu-icon"
+        onclick="toogleMenu()"
+      />
+    </nav>
+    <div class="header">
+      <h1>
+        <span>BILLY'S</span><br />
+        <span>PORTFOLIO</span>
+      </h1>
+      <div class="btn-container">
+        <button class="btn-dark">Request call back</button>
+        <button class="btn-light">Know more</button>
+      </div>
+      <p>Asipiring software developer with experince in coding websites</p>
+    </div>
+    <div class="main">
+      <div class="aboutme">
+        <h3>About Me</h3>
+        <p>
+          I’m Billy Ramontja, an IT professional with a strong background in web
+          development, networking, and cybersecurity. My experience spans
+          front-end and back-end development, along with system security, gained
+          through internships and a System Development Learnership. I’ve honed
+          skills in HTML, CSS, C#, and networking, and recently completed a
+          Cisco cybersecurity course to deepen my knowledge in secure software
+          development.
+          <br /><br />
+
+          I’m passionate about problem-solving, continuous learning, and making
+          an impact as a software developer. I’m now seeking opportunities to
+          apply my skills and grow in the tech industry.
+        </p>
+      </div>
+      <div>
+        <img src="myself.jpg" class="photo" />
+      </div>
+    </div>
+    <div class="background">
+      <h3>Background</h3>
+      <div>
+        <p>
+          <em>Education</em><br />
+          high school
+        </p>
+      </div>
+      <div>
+        <p><em>Experience</em><br /></p>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <script>
+      let navbar = document.querySelector("nav");
+      let menuLinks = document.getElementById("menu-links");
+
+      function toogleMenu() {
+        menuLinks.classList.toggle("show-menu");
+      }
+
+      window.onscroll = function () {
+        if (window.scrollY > 0) {
+          navbar.style.background = "#eefff9";
+        } else {
+          navbar.style.background = "transparent";
+        }
+      };
+    </script>
+  </body>
+</html>
