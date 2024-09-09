@@ -45,6 +45,12 @@ nav ul li {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  border: 0;
+  outline: 0;
+  display: inline-flex;
+
+  font-size: 18px;
+  cursor: pointer;
 }
 .header h1 {
   margin-top: 100px;
@@ -53,14 +59,6 @@ nav ul li {
 }
 .btn-container {
   margin: 20px 0;
-}
-.header {
-  border: 0;
-  outline: 0;
-  display: inline-flex;
-  align-items: center;
-  font-size: 18px;
-  cursor: pointer;
 }
 .btn-dark {
   background-color: #000;
@@ -96,16 +94,83 @@ h3 {
   margin: 0%;
 }
 .photo {
-  width: 300px;
+  width: 350px;
   height: auto;
+  margin-top: 20%;
 }
-.background {
-  background-color: #5c5b5b;
+.project-preview h3 {
   color: #fff;
 }
-.background p {
-  text-align: justify;
-  margin: 1.5% 5% 0 5%;
+
+body {
+  background: linear-gradient(#eefff9 0%, #ffccc1 49%, #dcdbff 100%);
+  background-attachment: fixed;
+  color: #fff;
+}
+.footer {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  padding: 0 5% 0% 5%;
+  gap: 15%;
+}
+.contact {
+  line-height: 35px;
+}
+
+.form {
+  padding: 1%;
+  line-height: 35px;
+}
+.contact p {
+  margin-top: 15px;
+}
+.project-preview {
+  display: inline-block;
+  padding: 0 5% 0% 5%;
+  line-height: 45px;
+}
+.aboutme hr {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+/*---new add on---*/
+.project {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+  overflow: hidden;
+  text-align: center;
+  width: 300px;
+  height: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+.project h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+.project-photo {
+  height: 1500px;
+}
+.project a {
+  background-color: #007bff;
+  color: white;
+  display: inline-block;
+  margin: 5px 0 10px;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.project a:hover {
+  background-color: #0056b3;
 }
 
 /* ------ animation ---------*/
@@ -158,7 +223,7 @@ h3 {
     background: #000;
     color: #ffffff;
     left: 0;
-    top: 100%;
+    top: 60px;
     text-align: center;
     max-height: 0;
     overflow: hidden;
@@ -177,25 +242,79 @@ h3 {
   .menu-icon {
     display: block;
     width: 30px;
+    cursor: pointer;
   }
   .show-menu {
-    max-height: 60px;
+    max-height: 200px;
   }
   .aboutme p {
-    margin: 1.5% 5% 0 5%;
-    font-size: small;
+    margin: 10px 5%;
+    font-size: 14px;
     text-align: justify;
   }
   .aboutme h3 {
     font-size: larger;
   }
   .main {
-    display: inline-block;
+    display: block;
     width: 100%;
+    padding: 20px 0;
   }
   .photo {
-    width: 50%;
+    width: 80%;
+    margin-top: 10%;
+  }
+  body {
+    width: 100%;
+    background-attachment: fixed;
+  }
+  .footer {
+    width: 100%;
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+  }
+  .header h1 {
+    font-size: 11vw;
+    line-height: 11vw;
+  }
+  .header P {
+    max-width: 100%;
+    font-size: small;
+  }
+  .btn-container {
+    margin: 10px 0;
+  }
+  .contact p,
+  .form {
+    text-align: left;
+    line-height: 1.6;
+  }
+  .project {
+    width: 100%; /* Make project previews take full width */
+    margin: 20px 0;
+  }
+  .project img {
+    width: 90%;
+    height: auto;
+    margin: 0 auto; /* Center the image */
+  }
+  .footer {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Makes the footer items stack vertically */
+    align-items: center;
+    padding: 20px;
+  }
+  .contact,
+  .form {
+    width: 100%;
+
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: larger;
   }
 }
-
 /* ------ Media Queries for header content ------- */
