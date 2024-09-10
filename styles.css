@@ -101,11 +101,12 @@ h3 {
 .project-preview h3 {
   color: #fff;
 }
-
+h3 {
+  color: #fff;
+}
 body {
   background: linear-gradient(#eefff9 0%, #ffccc1 49%, #dcdbff 100%);
   background-attachment: fixed;
-  color: #fff;
 }
 .footer {
   background-color: #000;
@@ -149,16 +150,14 @@ body {
 
 .project img {
   width: 100%;
-  height: auto;
+  height: 160px;
 }
 
 .project h2 {
   font-size: 1.5em;
   margin: 10px 0;
 }
-.project-photo {
-  height: 1500px;
-}
+
 .project a {
   background-color: #007bff;
   color: white;
