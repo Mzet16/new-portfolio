@@ -19,7 +19,9 @@ nav {
 .logo {
   height: 35px;
 }
-
+nav a {
+  color: #000;
+}
 nav ul li {
   list-style: none;
   display: inline-block;
