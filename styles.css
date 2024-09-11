@@ -259,6 +259,7 @@ body {
   nav ul li {
     margin: 10px;
     font-size: 14px;
+    color: #fff;
   }
   .menu-icon {
     display: block;
@@ -314,6 +315,9 @@ body {
   .project {
     width: 100%; /* Make project previews take full width */
     margin: 20px 0;
+  }
+  .project-preview {
+    display: block;
   }
   .project img {
     width: 90%;
