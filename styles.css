@@ -306,7 +306,10 @@ body {
   }
   .btn-container {
     margin: 10px 0;
+    line-height: 2;
+    gap: 500px;
   }
+
   .contact p,
   .form {
     text-align: left;
